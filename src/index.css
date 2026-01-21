@@ -1,0 +1,110 @@
+:root{
+  --primary: #0d6efd;
+  --accent: #6610f2;
+  --muted: #6c757d;
+  --success: #198754;
+  --danger: #dc3545;
+  --card-bg: #ffffff;
+  --page-bg: #f6f8fb;
+}
+
+body {
+  background-color: var(--page-bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding-top: 70px;
+  color: #222;
+}
+
+/* Navbar adjustments */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.navbar {
+  box-shadow: 0 2px 6px rgba(16,24,40,0.05);
+}
+
+/* Page container */
+.container-max {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Card style */
+.card-ghost {
+  background: linear-gradient(180deg, #fff 0%, #fbfdff 100%);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(17,24,39,0.04);
+}
+
+/* Dashboard cards */
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  gap: 18px;
+}
+
+/* Buttons */
+.btn-primary, .btn-success, .btn-danger {
+  transition: transform .08s ease, box-shadow .12s ease, background-color .12s ease;
+}
+.btn-primary:hover, .btn-success:hover, .btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(13,110,253,0.12);
+}
+.btn-outline {
+  transition: all .12s ease;
+}
+
+/* Headings alignment */
+.page-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.page-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* Low stock badge */
+.badge-low {
+  background: linear-gradient(90deg,#fff8f0,#fff0ef);
+  color: var(--danger);
+  border: 1px solid rgba(220,53,69,0.08);
+  font-weight: 600;
+}
+
+/* Product table small adjustments */
+.table .badge {
+  font-size: 0.75rem;
+}
+
+/* Small helper */
+.kv {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.navbar .signed-in {
+  color: #fff;
+  opacity: 0.9;
+  margin-right: 8px;
+}
+.footer-note { color: var(--muted); font-size:0.9rem; }
+/* append to src/index.css */
+.list-group {
+  margin: 0;
+  padding: 0;
+}
+.card-ghost .list-group-item {
+  border: none;
+  border-bottom: 1px solid #f1f3f5;
+}

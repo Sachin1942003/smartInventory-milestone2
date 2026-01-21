@@ -1,128 +1,70 @@
-📦 Inventory Management System – Milestone 2
-🔹 Project Overview
+# Getting Started with Create React App
 
-Milestone 2 extends the Inventory Management System by introducing Product Management and Stock Management features with secure role-based access and a React frontend fully integrated with the Spring Boot backend.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This milestone focuses on managing products, tracking stock movements, and providing an admin-friendly UI for inventory operations.
+## Available Scripts
 
-🚀 Tech Stack
-Backend
+In the project directory, you can run:
 
-Java 17
+### `npm start`
 
-Spring Boot
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Spring Security (JWT Authentication)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Spring Data JPA
+### `npm test`
 
-MySQL
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Frontend
+### `npm run build`
 
-React (Functional Components + Hooks)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Axios
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Basic CSS styling
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-🔐 Authentication & Authorization
+### `npm run eject`
 
-JWT-based authentication
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Roles:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-ADMIN
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-EMPLOYEE
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Role-based API protection
+## Learn More
 
-Secure login & signup APIs
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-✅ Milestone-2 Features Implemented
-📦 Product Management
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Create new products
+### Code Splitting
 
-View all products
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Search product by SKU
+### Analyzing the Bundle Size
 
-Search products by name
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Delete products
+### Making a Progressive Web App
 
-Each product includes:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-SKU (unique)
+### Advanced Configuration
 
-Name
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Category
+### Deployment
 
-Supplier
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Unit Price
+### `npm run build` fails to minify
 
-Quantity
-
-📊 Stock Management
-
-Stock IN (increase quantity)
-
-Stock OUT (decrease quantity with validation)
-
-Prevent stock-out if insufficient quantity
-
-Maintain stock transaction history
-
-View stock history by product SKU
-
-👥 User Management (Admin Only)
-
-View total number of users
-
-View list of users with:
-
-Email
-
-Role (ADMIN / EMPLOYEE)
-
-🖥️ Frontend Features
-
-Login screen with JWT handling
-
-Add product form
-
-Product listing with delete option
-
-Stock IN / Stock OUT UI
-
-Stock history view
-
-Admin-only user list view
-
-Loading & error handling
-
-Environment-based API configuration
-
-🔗 API Endpoints (Milestone-2)
-🔐 Authentication
-Method	Endpoint	Description
-POST	/auth/signup	Register ADMIN / EMPLOYEE
-POST	/auth/login	Login & get JWT
-📦 Products
-Method	Endpoint	Description
-POST	/products	Create product
-GET	/products	Get all products
-GET	/products/sku/{sku}	Get product by SKU
-GET	/products/search?name=	Search products
-DELETE	/products/{sku}	Delete product
-📊 Stock
-Method	Endpoint	Description
-POST	/stock/update	Stock IN / OUT
-GET	/stock/history/{sku}	Stock history
-👥 Admin
-Method	Endpoint	Description
-GET	/admin/users	View all users (ADMIN only)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
