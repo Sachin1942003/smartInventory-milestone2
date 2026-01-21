@@ -114,6 +114,8 @@ Environment-based API configuration
 Method	Endpoint	Description
 POST	/auth/signup	Register ADMIN / EMPLOYEE
 POST	/auth/login	Login & get JWT
+
+
 📦 Products
 Method	Endpoint	Description
 POST	/products	Create product
@@ -121,10 +123,14 @@ GET	/products	Get all products
 GET	/products/sku/{sku}	Get product by SKU
 GET	/products/search?name=	Search products
 DELETE	/products/{sku}	Delete product
+
+
 📊 Stock
 Method	Endpoint	Description
 POST	/stock/update	Stock IN / OUT
 GET	/stock/history/{sku}	Stock history
+
+
 👥 Admin
 Method	Endpoint	Description
 GET	/admin/users	View all users (ADMIN only)
